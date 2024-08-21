@@ -1,0 +1,8 @@
+.svg-up {
+  fill: var(--dark-color);
+}
+.svg-down {
+  fill: var(--dark-color);
+  transform: rotate(180deg);
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+.contact-page {
+  flex-direction: column;
+  margin: 2rem;
+  column-gap: 5vw;
+}
+
+.about-me-container {
+  flex-direction: column;
+  padding: 25px 0;
+  row-gap: 10px;
+}
+
+.contact-me-container {
+  flex-direction: column;
+  padding: 25px 0;
+  row-gap: 5px;
+}
+
+.contact-btn {
+  width: fit-content;
+  /* margin: 0 auto; */
+  margin-left: 0.6rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .contact-page {
+    flex-direction: row;
+  }
+  .about-me-container {
+    width: 50%;
+  }
+  .contact-me-container {
+    width: 50%;
+  }
+  .contact-page {
+    margin: 2rem 4rem;
+  }
+}

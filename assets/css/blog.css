@@ -1,0 +1,28 @@
+.blog-header {
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.grid-container {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.articles-container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  column-gap: 0.5rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 6fr 2fr;
+  }
+}
+

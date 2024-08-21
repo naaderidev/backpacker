@@ -1,0 +1,32 @@
+/*=================================start-footer=================================*/
+#footer {
+  background-color: var(--dark-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.links {
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.links a {
+  color: var(--light-color) !important;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.links a:hover {
+  color: var(--red-color) !important;
+}
+
+@media (min-width: 576px) {
+  #footer {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+/*=================================finish-footer=================================*/

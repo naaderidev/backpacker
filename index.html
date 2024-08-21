@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BackPacker</title>
+    <link
+      rel="icon"
+      href="./assets/images/icons/icons8-expedition-backpack-100.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--modals-->
+    <!--header-->
+    <header>
+      <!--Topbar-->
+      <site-topbar></site-topbar>
+      <!--Navbar-->
+      <site-navbar
+        home-link="#"
+        blog-link="./blog.html"
+        article-link="./article.html"
+        contact-link="./contact.html"
+      ></site-navbar>
+    </header>
+
+    <!--main body-->
+    <main>
+      <!--slider-->
+      <div class="slider">
+        <article class="slider-container d-flex">
+          <h1 class="logo text-dark">BackPacker</h1>
+          <h4 class="text-dark">Let's Discover The World Together</h4>
+          <a href="#" type="button" class="btn">Explore Now</a>
+        </article>
+      </div>
+
+      <!--suggestion-->
+      <section class="suggestion row">
+        <form action="#" class="suggestion-form">
+          <fieldset class="major-fieldset d-flex w-100">
+            <legend class="text-light">Suggest for my tours</legend>
+            <fieldset class="minor-fieldset d-flex text-light w-100">
+              <label for="destination">Destination</label>
+              <input
+                id="destination"
+                class="input text-light"
+                type="text"
+                placeholder="Suggest Destination"
+              />
+            </fieldset>
+            <fieldset class="minor-fieldset d-flex text-light w-100">
+              <label for="departDate">Depart Date</label>
+              <input
+                id="departDate"
+                class="input text-light"
+                type="date"
+                placeholder="Depart Date"
+              />
+            </fieldset>
+            <fieldset class="minor-fieldset d-flex text-light w-100">
+              <label for="returnDate">Return Date</label>
+              <input
+                id="returnDate"
+                class="input text-light"
+                type="date"
+                placeholder="Return Date"
+              />
+            </fieldset>
+            <fieldset class="minor-fieldset d-flex text-light w-100">
+              <label for="duration">Transport</label>
+              <input
+                id="duration"
+                class="input text-light"
+                type="text"
+                placeholder="Suggest Transport"
+              />
+            </fieldset>
+          </fieldset>
+
+          <a href="#" type="button" class="btn-suggest">Submit</a>
+        </form>
+      </section>
+
+      <!--Tour Packages-->
+      <svg-devider svg-orient="up"></svg-devider>
+      <section class="tour-packages">
+        <section-title class="tours-header">
+          <h2 slot="title" class="text-center text-dark mb-3">
+            Pefect Tour Packages
+          </h2>
+          <h4 slot="subtitle" class="text-center text-muted mb-3">
+            Come with me!
+          </h4>
+          <p slot="text" class="text-center text-dark mb-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            rem? Lorem ipsum dolor sit amet.
+          </p>
+        </section-title>
+        <section class="tours-container d-grid">
+          <card-secondary
+            tour-img="https://images.unsplash.com/photo-1577278254637-a8b6a7f3614e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG5ld3lvcmt8ZW58MHx8MHx8fDA%3D"
+            tour-country="NewYork"
+            tour-duration="7 days"
+            tour-capacity="12 person"
+          ></card-secondary>
+          <card-secondary
+            tour-img="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGhhaWxhbmR8ZW58MHx8MHx8fDA%3D"
+            tour-country="Thailand"
+            tour-duration="5 days"
+            tour-capacity="10 person"
+          ></card-secondary>
+          <card-secondary
+            tour-img="https://plus.unsplash.com/premium_photo-1666283181610-b95ee7e55465?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBhcmlzfGVufDB8fDB8fHww"
+            tour-country="Paris"
+            tour-duration="4 days"
+            tour-capacity="20 person"
+          ></card-secondary>
+          <card-secondary
+            tour-img="https://plus.unsplash.com/premium_photo-1697730224601-a3c867ac1886?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3lkbmV5fGVufDB8fDB8fHww"
+            tour-country="Sydney"
+            tour-duration="6 days"
+            tour-capacity="10 person"
+          ></card-secondary>
+          <card-secondary
+            tour-img="https://images.unsplash.com/photo-1566450653303-2614cbb292ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV0aGVybGFuZHxlbnwwfHwwfHx8MA%3D%3D"
+            tour-country="Netherland"
+            tour-duration="5 days"
+            tour-capacity="25 person"
+          ></card-secondary>
+        </section>
+      </section>
+      <!--Tour Packages-->
+
+      <!--Registeration-->
+      <svg-devider svg-orient="down"></svg-devider>
+      <section class="registeration d-flex">
+        <section-title>
+          <h2 slot="title" class="text-center text-light mb-3">Register Now</h2>
+          <h4 slot="subtitle" class="text-center text-muted mb-3">
+            For Perfect Tour Packages
+          </h4>
+          <p slot="text" class="text-center text-light mb-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            rem? Lorem ipsum dolor sit amet.
+          </p>
+        </section-title>
+        <section class="registeration-container d-grid">
+          <!--details-->
+          <div class="registeration-content">
+            <h5 class="text-ltr mb-2">
+              <span class="text-green">30%</span> OFF for your first trip
+            </h5>
+            <h6 class="text-ltr mb-2">
+              Discover the world with our perfect tour guides!
+            </h6>
+            <p class="text-ltr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              ipsa accusantium modi est, dolorum quidem voluptas pariatur
+              deleniti fugit provident.
+            </p>
+            <ul>
+              <li class="mb-1">
+                <i class="fa fa-check text-green"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li class="mb-1">
+                <i class="fa fa-check text-green"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+              <li class="mb-1">
+                <i class="fa fa-check text-green"></i>
+                Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+          </div>
+          <!--form-->
+          <form action="#" class="registeration-form">
+            <fieldset class="d-flex">
+              <input
+                type="email"
+                placeholder="Email"
+                class="input text-light"
+              />
+              <input type="text" placeholder="Phone" class="input text-light" />
+              <select class="select text-light">
+                <option class="option-item" value="">Select Tour</option>
+                <optgroup label="2023" class="text-light">
+                  <option class="option-item" value="">NewYork | 12 Sep</option>
+                  <option class="option-item" value="">
+                    Thailand | 15 oct
+                  </option>
+                  <option class="option-item" value="">Paris | 20 Dec</option>
+                </optgroup>
+                <optgroup label="2024" class="text-light">
+                  <option class="option-item" value="">
+                    Netherland | 23 Jan
+                  </option>
+                  <option class="option-item" value="">Sydney | 31 Mar</option>
+                </optgroup>
+              </select>
+              <a href="#" type="button" class="btn">Register</a>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+      <!--Registeration-->
+
+      <!--popular destination-->
+      <svg-devider svg-orient="up"></svg-devider>
+      <section class="popular-destination d-flex">
+        <section-title class="destination-header">
+          <h2 slot="title" class="text-center text-dark mb-3">
+            Explore Top Destinations
+          </h2>
+          <h4 slot="subtitle" class="text-center text-muted mb-3">
+            Popular-Destination
+          </h4>
+          <p slot="text" class="text-center text-dark mb-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            rem? Lorem ipsum dolor sit amet.
+          </p>
+        </section-title>
+        <section class="destination-container d-grid">
+          <card-primary
+            destination-img="https://plus.unsplash.com/premium_photo-1661887248442-0b4a4a73bc46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmV0aGVybGFuZHN8ZW58MHx8MHx8fDA%3D"
+            destination-name="Netherland"
+            destination-cities="06 Cities"
+          ></card-primary>
+          <card-primary
+            destination-img="https://plus.unsplash.com/premium_photo-1661963282618-f9445b5684b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5vcndheXxlbnwwfHwwfHx8MA%3D%3D"
+            destination-name="Norway"
+            destination-cities="09 Cities"
+          ></card-primary>
+          <card-primary
+            destination-img="https://plus.unsplash.com/premium_photo-1661956135713-f93a5a95904d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZnJhbmNlfGVufDB8fDB8fHww"
+            destination-name="France"
+            destination-cities="12 Cities"
+          ></card-primary>
+          <card-primary
+            destination-img="https://images.unsplash.com/photo-1514896856000-91cb6de818e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGl0YWx5fGVufDB8fDB8fHww"
+            destination-name="Italy"
+            destination-cities="15 Cities"
+          ></card-primary>
+          <card-primary
+            destination-img="https://plus.unsplash.com/premium_photo-1675198764206-40536cd9c362?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVzYXxlbnwwfHwwfHx8MA%3D%3D"
+            destination-name="United States"
+            destination-cities="55 Cities"
+          ></card-primary>
+          <card-primary
+            destination-img="https://plus.unsplash.com/premium_photo-1697730198238-48ee2f2fe1b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3lkbmV5fGVufDB8fDB8fHww"
+            destination-name="Australia"
+            destination-cities="25 Cities"
+          ></card-primary>
+        </section>
+        <section class="destination-footer d-flex">
+          <a href="./blog.html" class="btn text-light">All Destinations </a>
+        </section>
+      </section>
+      <!--popular destination-->
+
+      <!--photography-->
+      <section class="photography d-flex">
+        <section class="photography-header row">
+          <section-title>
+            <h2 slot="title" class="text-center text-dark mb-3">Photography</h2>
+            <h4 slot="subtitle" class="text-center text-muted mb-3">
+              Cultures & People
+            </h4>
+            <p slot="text" class="text-center text-dark mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              rem? Lorem ipsum dolor sit amet.
+            </p>
+          </section-title>
+          <div class="filter-category-buttons d-flex">
+            <a type="button" class="filter-btn btn-active" data-btn="All"
+              >All</a
+            >
+            <a type="button" class="filter-btn" data-btn="US">US</a>
+            <a type="button" class="filter-btn" data-btn="AF">AF</a>
+            <a type="button" class="filter-btn" data-btn="AS">AS</a>
+            <a type="button" class="filter-btn" data-btn="AU">AU</a>
+            <!-- <a type="button" class="filter-btn" data-btn="Eur">Eur</a> -->
+          </div>
+        </section>
+        <section class="photography-container">
+          <card-tertiary
+            data-type="AF"
+            photo-country="Morroco"
+            photo-mainland="Africa"
+            photo-date-year="2024"
+            photo-date-month="Jan"
+            photo-img="https://plus.unsplash.com/premium_photo-1673415819362-c2ca640bfafe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9yb2Njb3xlbnwwfHwwfHx8MA%3D%3D"
+          ></card-tertiary>
+
+          <card-tertiary
+            data-type="AS"
+            photo-country="Maldives"
+            photo-mainland="Asia"
+            photo-date-year="2024"
+            photo-date-month="Jan"
+            photo-img="https://plus.unsplash.com/premium_photo-1666432045848-3fdbb2c74531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFsZGl2ZXN8ZW58MHx8MHx8fDA%3D"
+          ></card-tertiary>
+
+          <card-tertiary
+            data-type="US"
+            photo-country="NewYork"
+            photo-mainland="America"
+            photo-date-year="2023"
+            photo-date-month="Dec"
+            photo-img="https://plus.unsplash.com/premium_photo-1697730150275-dba1cfe8af9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TmV3WW9ya3xlbnwwfHwwfHx8MA%3D%3D"
+          ></card-tertiary>
+
+          <card-tertiary
+            data-type="AF"
+            photo-country="Egypt"
+            photo-mainland="Africa"
+            photo-date-year="2024"
+            photo-date-month="Oct"
+            photo-img="https://plus.unsplash.com/premium_photo-1661891622579-bee76e28c304?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWd5cHR8ZW58MHx8MHx8fDA%3D"
+          ></card-tertiary>
+
+          <card-tertiary
+            data-type="AS"
+            photo-country="Iran"
+            photo-mainland="Asia"
+            photo-date-year="2023"
+            photo-date-month="May"
+            photo-img="https://images.unsplash.com/photo-1530311583484-ea8bf4c407fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXJhbnxlbnwwfHwwfHx8MA%3D%3D"
+          ></card-tertiary>
+
+          <card-tertiary
+            data-type="AU"
+            photo-country="Australia"
+            photo-mainland="Australia"
+            photo-date-year="2023"
+            photo-date-month="May"
+            photo-img="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXVzdHJhbGlhfGVufDB8fDB8fHww"
+          ></card-tertiary>
+        </section>
+      </section>
+      <!--photography-->
+
+      <!--stories-->
+      <svg-devider svg-orient="down"></svg-devider>
+      <section class="stories text-light d-flex">
+        <section-title>
+          <h2 slot="title" class="text-center text-light mb-3">STORIES</h2>
+          <h4 slot="subtitle" class="text-center text-muted mb-3">
+            JOURNAL & DIARY
+          </h4>
+          <p slot="text" class="text-center mb-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+            distinctio fugiat fuga possimus eos temporibus vel dicta in
+            reiciendis dolore.
+          </p>
+        </section-title>
+        <section class="stories-container d-flex">
+          <card-quaternary
+            class="card-quaternary"
+            story-img="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            story-detail="./article.html"
+          ></card-quaternary>
+          <card-quaternary
+            class="card-quaternary"
+            story-img="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG9reW98ZW58MHx8MHx8fDA%3D"
+            story-detail="./article.html"
+          ></card-quaternary>
+          <card-quaternary
+            class="card-quaternary"
+            story-img="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmV3JTIweW9ya3xlbnwwfHwwfHx8MA%3D%3D"
+            story-detail="./article.html"
+          ></card-quaternary>
+          <card-quaternary
+            class="card-quaternary"
+            story-img="https://plus.unsplash.com/premium_photo-1671809692422-4893b9e09119?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9uZG9ufGVufDB8fDB8fHww"
+            story-detail="./article.html"
+          ></card-quaternary>
+        </section>
+        <div class="stories-footer row">
+          <a href="./blog.html" class="btn text-light">All Stories</a>
+        </div>
+      </section>
+      <svg-devider svg-orient="up"></svg-devider>
+      <!--stories-->
+
+      <!--prowalks-->
+      <section class="prowalks-container d-felx">
+        <section-title>
+          <h2 slot="title" class="text-center text-dark mb-3">Prowalks</h2>
+          <h4 slot="subtitle" class="text-center text-muted mb-3">
+            take a tour through my camera!
+          </h4>
+          <p slot="text" class="text-center text-dark mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            rem? Lorem ipsum dolor sit amet.
+          </p>
+        </section-title>
+        <section class="prowalks-videos d-grid">
+          <card-quinary
+            class="card-quinary"
+            video-link="#"
+            cover-img="https://images.unsplash.com/photo-1473726867722-6b8a5e529d76?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWV4aWNvfGVufDB8fDB8fHww"
+          ></card-quinary>
+
+          <card-quinary
+            class="card-quinary"
+            video-link="#"
+            cover-img="https://plus.unsplash.com/premium_photo-1661964395684-56a1dc83bbb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmV0aGVybGFuZHxlbnwwfHwwfHx8MA%3D%3D"
+          ></card-quinary>
+
+          <card-quinary
+            class="card-quinary"
+            video-link="#"
+            cover-img="https://images.unsplash.com/photo-1564152387701-2e0acb6053cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV0aGVybGFuZHxlbnwwfHwwfHx8MA%3D%3D"
+          ></card-quinary>
+
+          <card-quinary
+            class="card-quinary"
+            video-link="#"
+            cover-img="https://images.unsplash.com/photo-1477271706509-fecda7438b68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3dpdHplcmxhbmR8ZW58MHx8MHx8fDA%3D"
+          ></card-quinary>
+
+          <card-quinary
+            class="card-quinary"
+            video-link="#"
+            cover-img="https://images.unsplash.com/photo-1510154328089-bdd27fc4ff66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHN3aXR6ZXJsYW5kfGVufDB8fDB8fHww"
+          ></card-quinary>
+        </section>
+      </section>
+
+      <!--newsletter-->
+      <svg-devider svg-orient="down"></svg-devider>
+      <site-newsletter></site-newsletter>
+      <!--newsletter-->
+    </main>
+
+    <!--footer-->
+    <site-footer></site-footer>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>

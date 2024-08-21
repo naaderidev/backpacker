@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Destinations</title>
+    <link rel="icon" href="./assets/images/icons/icons8-expedition-backpack-100.png" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <!--Topbar-->
+      <site-topbar></site-topbar>
+      <!--Navbar-->
+      <site-navbar
+        home-link="./index.html"
+        blog-link="#"
+        article-link="./article.html"
+        contact-link="./contact.html"
+      ></site-navbar>
+    </header>
+
+    <main>
+      <article class="blog-header row">
+        <h2 class="text-center text-dark mb-3">Inspiration - Stories</h2>
+        <h4 class="text-center text-muted mb-3">
+          Popular Destinations -- Journal & Diary
+        </h4>
+        <div class="filter-category-buttons d-flex">
+          <a type="button" class="filter-btn btn-active" data-btn="All">All</a>
+          <a type="button" class="filter-btn" data-btn="Destinations"
+            >Destinations</a
+          >
+          <a type="button" class="filter-btn" data-btn="Photographs"
+            >Photography</a
+          >
+          <a type="button" class="filter-btn" data-btn="Stories">Stories</a>
+        </div>
+      </article>
+
+      <section class="d-grid grid-container">
+        <!--articles container-->
+        <section class="articles-container">
+          <card-blog
+            blog-card-img="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            blog-card-title="Title-1"
+            blog-card-label="Destination"
+            blog-card-data-type="Destinations"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://plus.unsplash.com/premium_photo-1673415819362-c2ca640bfafe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9yb2Njb3xlbnwwfHwwfHx8MA%3D%3D"
+            blog-card-title="Title-2"
+            blog-card-label="Story"
+            blog-card-data-type="Stories"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://plus.unsplash.com/premium_photo-1666432045848-3fdbb2c74531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TWFsZGl2ZXN8ZW58MHx8MHx8fDA%3D"
+            blog-card-title="Title-3"
+            blog-card-label="Photography"
+            blog-card-data-type="Photographs"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://plus.unsplash.com/premium_photo-1697730150275-dba1cfe8af9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TmV3WW9ya3xlbnwwfHwwfHx8MA%3D%3D"
+            blog-card-title="Title-4"
+            blog-card-label="Destination"
+            blog-card-data-type="Destinations"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://plus.unsplash.com/premium_photo-1661891622579-bee76e28c304?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWd5cHR8ZW58MHx8MHx8fDA%3D"
+            blog-card-title="Title-5"
+            blog-card-label="Story"
+            blog-card-data-type="Stories"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://images.unsplash.com/photo-1530311583484-ea8bf4c407fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXJhbnxlbnwwfHwwfHx8MA%3D%3D"
+            blog-card-title="Title-6"
+            blog-card-label="Photography"
+            blog-card-data-type="Photographs"
+          ></card-blog
+          ><card-blog
+            blog-card-img="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXVzdHJhbGlhfGVufDB8fDB8fHww"
+            blog-card-title="Title-7"
+            blog-card-label="Story"
+            blog-card-data-type="Stories"
+          ></card-blog>
+        </section>
+
+        <!--sidebar-->
+        <site-sidebar></site-sidebar>
+      </section>
+
+      <!--newsletter-->
+      <svg-devider svg-orient="down"></svg-devider>
+      <site-newsletter></site-newsletter>
+      <!--newsletter-->
+    </main>
+
+    <!--footer-->
+    <site-footer></site-footer>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>

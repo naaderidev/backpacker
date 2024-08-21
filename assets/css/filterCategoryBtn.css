@@ -1,0 +1,32 @@
+/*=================================start-category-filter=================================*/
+.filter-category-buttons {
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--green-color);
+  color: var(--light-color);
+  /* font-size: 1.1rem;
+  font-weight: 500; */
+  padding: 1vw 2vw;
+  transition: all 0.3s ease-in-out;
+}
+.filter-btn:hover {
+  background-color: var(--red-color);
+}
+.filter-btn.btn-active {
+  background-color: var(--red-color);
+}
+
+.filter-btn:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.filter-btn:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/*=================================finish-category-filter=================================*/

@@ -1,0 +1,134 @@
+/*=================================start-navbar=================================*/
+.navbar {
+  background-color: var(--light-color);
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+.nav-links {
+  display: none;
+  margin-right: 15px;
+  color: var(--dark-color);
+  transition: 0.3s;
+}
+.nav-links:hover {
+  color: var(--red-color) !important;
+}
+
+.nav-dropdown {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  background-color: var(--light-color);
+  padding: 1rem;
+  z-index: 99;
+}
+
+.search-icon {
+  background-color: var(--red-color);
+  width: 45px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 145px;
+  top: 0;
+  bottom: 0;
+}
+
+.drop-down-icon {
+  background-color: var(--green-color);
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+}
+
+.search-icon a,
+.drop-down-icon a {
+  color: var(--dark-color);
+}
+.search-icon a:hover,
+.drop-down-icon a:hover {
+  color: var(--light-color);
+}
+
+@media (min-width: 576px) {
+  .search-icon {
+    display: flex;
+  }
+  .navbar {
+    justify-content: space-evenly;
+  }
+  .drop-down-icon {
+    right: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-links {
+    display: inline-block;
+  }
+  .drop-down-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-icon {
+    width: 60px;
+  }
+}
+/*=================================finish-navbar=================================*/
+.bar-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: 100;
+  background-color: var(--light-color);
+  padding: 1rem 0.5rem;
+}
+.close-btn:hover {
+  color: var(--red-color);
+}
+.bar-menu nav {
+  flex-direction: column;
+  align-items: end;
+  row-gap: 1rem;
+  padding-right: 1rem;
+}
+.bar-menu nav a:hover {
+  color: var(--green-color);
+}
+@media (min-width: 400px) {
+  .bar-menu {
+    width: 40vw;
+  }
+}
+@media (min-width: 576px) {
+  .bar-menu {
+    width: 30vw;
+  }
+}
+@media (min-width: 768px) {
+  .bar-menu {
+    width: 25vw;
+  }
+}

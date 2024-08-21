@@ -1,0 +1,27 @@
+import Footer from "../components/footer/Footer.js";
+import Devider from "../components/devider/Devider.js";
+import Newsletter from "../components/newsletter/Newsletter.js";
+import QuinaryCard from "../components/quinary-card/QuinaryCard.js";
+import SectionTitle from "../components/section-title/SectionTitle.js";
+import QuaternaryCard from "../components/quaternary-card/QuaternaryCard.js";
+import TertiaryCard from "../components/tertiary-card/TertiaryCard.js";
+import PrimaryCard from "../components/primary-card/PrimaryCard.js";
+import SecondaryCard from "../components/secondary-card/SecondaryCard.js";
+import Topbar from "../components/header/Topbar.js";
+import Navbar from "../components/header/Navbar.js";
+import Sidebar from "../components/sidebar/Sidebar.js";
+import BlogCard from "../components/blog-card/BlogCard.js";
+
+window.customElements.define("site-footer", Footer);
+window.customElements.define("svg-devider", Devider);
+window.customElements.define("site-newsletter", Newsletter);
+window.customElements.define("card-quinary", QuinaryCard);
+window.customElements.define("section-title", SectionTitle);
+window.customElements.define("card-quaternary", QuaternaryCard);
+window.customElements.define("card-tertiary", TertiaryCard);
+window.customElements.define("card-primary", PrimaryCard);
+window.customElements.define("card-secondary", SecondaryCard);
+window.customElements.define("site-topbar", Topbar);
+window.customElements.define("site-navbar", Navbar);
+window.customElements.define("site-sidebar", Sidebar);
+window.customElements.define("card-blog", BlogCard);

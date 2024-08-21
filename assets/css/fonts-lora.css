@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Lora-Bold;
+  src: url(./../fonts/Lora/static/Lora-Bold.ttf);
+}
+@font-face {
+  font-family: Lora-BoldItalic;
+  src: url(./../fonts/Lora/static/Lora-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Lora-Italic;
+  src: url(./../fonts/Lora/static/Lora-Italic.ttf);
+}
+@font-face {
+  font-family: Lora-Medium;
+  src: url(./../fonts/Lora/static/Lora-Medium.ttf);
+}
+@font-face {
+  font-family: Lora-MediumItalic;
+  src: url(./../fonts/Lora/static/Lora-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Lora-Regular;
+  src: url(./../fonts/Lora/static/Lora-Regular.ttf);
+}
+@font-face {
+  font-family: Lora-SemiBold;
+  src: url(./../fonts/Lora/static/Lora-SemiBold.ttf);
+}
+@font-face {
+  font-family: Lora-SemiBoldItalic;
+  src: url(./../fonts/Lora/static/Lora-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: Lora-Italic-VariableFont_wght;
+  src: url(./../fonts/Lora/Lora-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Lora-VariableFont_wght;
+  src: url(./../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+small,
+ul,
+li,
+input,
+label,
+strong,
+legend,
+a,
+i,
+select,
+option,
+textarea,
+div {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  line-height: 1.5em;
+  font-weight: 700;
+  font-family: Lora-Italic-VariableFont_wght;
+}
+p,
+small,
+ul,
+li,
+input,
+label,
+strong,
+a,
+i,
+select,
+option,
+textarea,
+div {
+  line-height: 1.7em;
+  font-weight: 300;
+  font-family: Lora-Italic;
+}
+
+h1 {
+  --min: 1.5em;
+  --val: 4vw;
+  --max: 2.5em;
+}
+h2 {
+  --min: 1.3em;
+  --val: 3.5vw;
+  --max: 2.3em;
+}
+h3,
+legend {
+  --min: 1.1em;
+  --val: 3vw;
+  --max: 2.1em;
+}
+h4 {
+  --min: 1em;
+  --val: 2.8vw;
+  --max: 2em;
+}
+h5 {
+  --min: 0.9em;
+  --val: 2.6vw;
+  --max: 1.9em;
+}
+h6 {
+  --min: 0.8em;
+  --val: 2.4vw;
+  --max: 1.8em;
+}
+p,
+ul,
+input,
+label,
+strong,
+select,
+option,
+textarea {
+  --min: 0.8em;
+  --val: 2vw;
+  --max: 1.4em;
+}
+li,
+small {
+  --min: 1em;
+  --val: 1.5vw;
+  --max: 1.1em;
+}
+span {
+  line-height: inherit;
+  font-weight: inherit;
+  --min: inherit;
+  --val: inherit;
+  --max: inherit;
+}
+
+.text-italic-bold {
+  font-family: Lora-BoldItalic !important;
+}

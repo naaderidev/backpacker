@@ -1,0 +1,42 @@
+.primary-card {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+.primary-card:hover {
+  box-shadow: 0 0 30px #cccccc;
+}
+
+.primary-card-img {
+  transition: 0.5s;
+  height: 200px;
+}
+.primary-card:hover .primary-card-img {
+  transform: scale(1.3);
+}
+
+.primary-card-caption {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(256, 256, 256, 0.5);
+  transition: 0.5s;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+.primary-card:hover .primary-card-caption {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-width: 30px;
+}

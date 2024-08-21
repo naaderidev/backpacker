@@ -1,0 +1,36 @@
+/*=================================start topbar=================================*/
+/* header {
+  position: relative;
+} */
+.topbar {
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1rem 0;
+  display: none;
+  background-color: #040e27;
+}
+
+.quick-contact {
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+.topbar-social-links {
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.topbar-social-links a:hover {
+  color: var(--red-color);
+}
+
+@media (min-width: 576px) {
+  .topbar {
+    display: flex;
+  }
+}
+/*=================================finish topbar=================================*/
+

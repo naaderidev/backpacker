@@ -1,0 +1,49 @@
+/*=================================start-quinary-card=================================*/
+
+.video {
+  position: relative;
+  transition: 0.3s;
+  height: 100%;
+}
+.video:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.video img {
+  width: 100%;
+  height: 100%;
+}
+
+.video-caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.youtube-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--red-color) !important;
+  transition: all 0.3s ease-in-out;
+  z-index: 10000;
+  /* font-size: 2rem; */
+}
+.youtube-link i {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .youtube-link i {
+    font-size: 36px;
+  }
+}
+/*=================================finish-quinary-card=================================*/

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Contact</title>
+    <link rel="icon" href="./assets/images/icons/icons8-expedition-backpack-100.png" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <!--Topbar-->
+      <site-topbar></site-topbar>
+      <!--Navbar-->
+      <site-navbar
+        home-link="./index.html"
+        blog-link="./blog.html"
+        article-link="./article.html"
+        contact-link="#"
+      ></site-navbar>
+    </header>
+
+    <main>
+      <section class="contact-page d-flex">
+        <div class="about-me-container d-flex">
+          <img src="./assets/images/profile.webp" alt="profile-image" />
+          <h3 class="title dark-text">Hi! I'm Bahar</h3>
+          <p class="text text-justify dark-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quaerat! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis voluptatum deserunt nesciunt
+            commodi? Pariatur iusto commodi, id exercitationem quaerat dicta.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            maiores voluptas nesciunt corporis fuga eligendi vero cumque ut
+            dicta impedit?
+          </p>
+        </div>
+        <div class="contact-me-container d-flex">
+          <h4 class="title dark-text">Send me your thought!</h4>
+          <input type="text" placeholder="Enter Name" class="input text-dark" />
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="input text-dark"
+          />
+          <textarea
+            class="textarea text-dark"
+            cols="30"
+            rows="10"
+            placeholder="write..."
+          ></textarea>
+          <a href="#" type="button" class="btn contact-btn">Send</a>
+        </div>
+      </section>
+      <!--newsletter-->
+      <svg-devider svg-orient="down"></svg-devider>
+      <site-newsletter></site-newsletter>
+      <!--newsletter-->
+    </main>
+
+    <!--footer-->
+    <site-footer></site-footer>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>

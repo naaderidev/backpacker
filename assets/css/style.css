@@ -1,0 +1,15 @@
+@import "./reset.css";
+/*utilities styles*/
+@import "./utilities.css";
+@import "./fonts-lora.css";
+
+@import "./index.css";
+@import "./contact.css";
+@import "./article.css";
+@import "./blog.css";
+
+
+/*components styles*/
+@import "./filterCategoryBtn.css";
+
+
