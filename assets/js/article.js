@@ -9,7 +9,7 @@ const photos = [
   "https://naaderidev-bucket.storage.c2.liara.space/backpacker/p13.jpg",
   "https://naaderidev-bucket.storage.c2.liara.space/backpacker/p4.jpg",
   "https://naaderidev-bucket.storage.c2.liara.space/backpacker/p3.webp",
-  "https://naaderidev-bucket.storage.c2.liara.space/backpacker/p24.jpg",
+  "https://naaderidev-bucket.storage.c2.liara.space/backpacker/p22.jpg",
 ];
 
 const prevBtn = $.querySelector(".prev-btn");
