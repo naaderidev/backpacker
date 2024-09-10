@@ -27,6 +27,8 @@ This is an initial demo of a website designed specifically for tour leaders. The
 
 **This is an initial sample of this website, which is written solely with raw JavaScript and CSS, and no backend or database has been considered for the website. In the next version of this project, it will be updated as a full-stack project, using the NextJS framework, Tailwindcss, Mongodb database and useful React libraries.**
 
+**this project is deployed here:  https://backpacker.liara.run/**
+
 ## Technologies Used  
 - HTML5  
 - CSS3  
